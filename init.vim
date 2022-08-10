@@ -23,25 +23,17 @@ Plug 'https://github.com/Pocco81/AutoSave.nvim' " autosave
 set encoding=UTF-8
 call plug#end()
 
-
 " Shortcuts:
-nnoremap <C-f> :NERDTreeFocus<CR>
+" focus on fileing
+nnoremap <C-f> :NERDTreeFocus<CR> 
 nnoremap <C-n> :NERDTree<CR>
+" open file menu
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-l> :call CocActionAsync('jumpDefinition')<CR>
 nnoremap <C-q> :TerminalSplit bash<CR>
 nmap <F8> :TagbarToggle<CR>
-
+" make enter autocomplute: 
+inoremap <silent><expr> <Enter> coc#pum#visible() ? coc#pum#confirm() : "\<Enter>"
 :set completeopt-=preview " For No Previews
 
-:colorscheme sonokai
- 
-" the autosave config:
-lua << EOF
- require"nvim-treesitter.highlight".set_custom_captures {
-    -- Highlight the @foo.bar capture group with the "Identifier" highlight group.
-    ["foo.bar"] = "Identifier",
-  }
-
-  
-EOF
+:colorscheme sonokai " colorscheme
