@@ -6,7 +6,7 @@
 :set smarttab
 :set softtabstop=4
 :set mouse=a
-
+  
 call plug#begin()
 Plug 'https://github.com/preservim/nerdtree' " NerdTree
 Plug 'https://github.com/tpope/vim-commentary' " For Commenting gcc & gc
@@ -18,8 +18,8 @@ Plug 'https://github.com/tc50cal/vim-terminal' " Vim Terminal
 Plug 'https://github.com/preservim/tagbar' " Tagbar for code navigation
 Plug 'https://github.com/terryma/vim-multiple-cursors' " CTRL + N for multiple cursors
 Plug 'https://github.com/neoclide/coc.nvim'  " Auto Completion
-Plug 'https://github.com/Pocco81/AutoSave.nvim' " AutoSave
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} " Treesitter for the highlight
+Plug 'https://github.com/Pocco81/AutoSave.nvim' " autosave
 set encoding=UTF-8
 call plug#end()
 
@@ -35,7 +35,7 @@ nmap <F8> :TagbarToggle<CR>
 :set completeopt-=preview " For No Previews
 
 :colorscheme sonokai
-
+ 
 " the autosave config:
 lua << EOF
  require"nvim-treesitter.highlight".set_custom_captures {
@@ -43,23 +43,5 @@ lua << EOF
     ["foo.bar"] = "Identifier",
   }
 
-local autosave = require("autosave")
-
-autosave.setup(
-    {
-        enabled = true,
-        execution_message = "File saved => " .. vim.fn.strftime("%H:%M:%S"),
-        events = {"InsertLeave", "TextChanged"},
-        conditions = {
-            exists = true,
-            filename_is_not = {},
-            filetype_is_not = {},
-            modifiable = true
-        },
-        write_all_buffers = false,
-        on_off_commands = true,
-        clean_command_line_interval = 0,
-        debounce_delay = 135
-    }
-)
+  
 EOF
