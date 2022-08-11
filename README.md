@@ -1,4 +1,4 @@
-# nvim-Plug-and-init-file
+# nvim Plug Form Ahmed M Osman.
 this is my neovim Plugs and init file.
 
 # How to use my setup? 
