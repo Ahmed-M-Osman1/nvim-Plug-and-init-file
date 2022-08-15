@@ -7,7 +7,7 @@
 :set softtabstop=4
 :set mouse=a
   
-call plug#begin()
+call plug#begin('~/.local/share/nvim/plugged')
 Plug 'https://github.com/preservim/nerdtree' " NerdTree
 Plug 'https://github.com/tpope/vim-commentary' " For Commenting gcc & gc
 Plug 'https://github.com/vim-airline/vim-airline' " Status bar
@@ -20,6 +20,8 @@ Plug 'https://github.com/terryma/vim-multiple-cursors' " CTRL + N for multiple c
 Plug 'https://github.com/neoclide/coc.nvim'  " Auto Completion
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} " Treesitter for the highlight
 Plug 'https://github.com/Pocco81/AutoSave.nvim' " autosave
+Plug 'windwp/nvim-autopairs' " autopairs
+
 set encoding=UTF-8
 call plug#end()
 
@@ -37,3 +39,8 @@ inoremap <silent><expr> <Enter> coc#pum#visible() ? coc#pum#confirm() : "\<Enter
 :set completeopt-=preview " For No Previews
 
 :colorscheme sonokai " colorscheme
+
+
+lua << EOF
+require "user.autopair"
+EOF
