@@ -30,6 +30,13 @@ and run
 yarn install
 ```
 
+
+add auto pair :
+```
+:CocInstall coc-pairs
+```
+
+
 This work is form NeuralNine channal: 
 
 
