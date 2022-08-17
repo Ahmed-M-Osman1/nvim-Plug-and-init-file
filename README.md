@@ -37,6 +37,13 @@ add auto pair :
 ```
 
 
+auto complete HTML tag:
+```
+:CocInstall coc-html
+```
+
+for other COC package see : https://github.com/orgs/neoclide/repositories
+
 This work is form NeuralNine channal: 
 
 
