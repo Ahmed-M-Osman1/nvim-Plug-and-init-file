@@ -30,6 +30,10 @@ and run
 yarn install
 ```
 
+add Typescript server :
+```
+:CocInstall coc-tsserver
+```
 
 add auto pair :
 ```
