@@ -30,6 +30,24 @@ and run
 yarn install
 ```
 
+add Typescript server :
+```
+:CocInstall coc-tsserver
+```
+
+add auto pair :
+```
+:CocInstall coc-pairs
+```
+
+
+auto complete HTML tag:
+```
+:CocInstall coc-html
+```
+
+for other COC package see : https://github.com/orgs/neoclide/repositories
+
 This work is form NeuralNine channal: 
 
 
