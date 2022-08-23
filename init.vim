@@ -10,7 +10,7 @@
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'https://github.com/preservim/nerdtree' " NerdTree
 Plug 'https://github.com/tpope/vim-commentary' " For Commenting gcc & gc
-Plug 'https://github.com/vim-airline/vim-airline' " Status bar
+" Plug 'https://github.com/vim-airline/vim-airline' " Status bar
 Plug 'https://github.com/ap/vim-css-color' " CSS Color Preview
 Plug 'https://github.com/rafi/awesome-vim-colorschemes' " Retro Scheme
 Plug 'https://github.com/ryanoasis/vim-devicons' " Developer Icons
@@ -20,6 +20,9 @@ Plug 'https://github.com/terryma/vim-multiple-cursors' " CTRL + N for multiple c
 Plug 'https://github.com/neoclide/coc.nvim'  " Auto Completion
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} " Treesitter for the highlight
 Plug 'https://github.com/Pocco81/AutoSave.nvim' " autosave
+" lualine
+Plug 'nvim-lualine/lualine.nvim'
+Plug 'kyazdani42/nvim-web-devicons'
 set encoding=UTF-8
 call plug#end()
 
@@ -37,3 +40,7 @@ inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
 :set completeopt-=preview " For No Previews
 
 :colorscheme sonokai " colorscheme
+
+lua << EOF
+require "user.lualine"
+EOF
