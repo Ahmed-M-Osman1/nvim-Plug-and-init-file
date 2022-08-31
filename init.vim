@@ -18,7 +18,6 @@ Plug 'https://github.com/tc50cal/vim-terminal' " Vim Terminal
 Plug 'https://github.com/preservim/tagbar' " Tagbar for code navigation
 Plug 'https://github.com/terryma/vim-multiple-cursors' " CTRL + N for multiple cursors
 Plug 'https://github.com/neoclide/coc.nvim'  " Auto Completion
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} " Treesitter for the highlight
 Plug 'https://github.com/Pocco81/AutoSave.nvim' " autosave
 " lualine
 Plug 'nvim-lualine/lualine.nvim'
@@ -32,6 +31,8 @@ nnoremap <C-f> :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 " open file menu
 nnoremap <C-t> :NERDTreeToggle<CR>
+
+nnoremap <C-s> :tabe<CR>
 nnoremap <C-l> :call CocActionAsync('jumpDefinition')<CR>
 nnoremap <C-q> :TerminalSplit bash<CR>
 nmap <F8> :TagbarToggle<CR>
