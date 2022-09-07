@@ -9,6 +9,7 @@
 
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'https://github.com/preservim/nerdtree' " NerdTree
+Plug 'Xuyuanp/nerdtree-git-plugin' " NerdTree Git tracker
 Plug 'https://github.com/tpope/vim-commentary' " For Commenting gcc & gc
 " Plug 'https://github.com/vim-airline/vim-airline' " Status bar
 Plug 'https://github.com/ap/vim-css-color' " CSS Color Preview
@@ -22,6 +23,8 @@ Plug 'https://github.com/Pocco81/AutoSave.nvim' " autosave
 " lualine
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
+" Plug 'SergioRibera/vim-screenshot', { 'do': 'npm install --prefix Renderizer' }
+Plug 'jmckiern/vim-shoot', { 'do': '\"./install.py\" chromedriver' }
 set encoding=UTF-8
 call plug#end()
 

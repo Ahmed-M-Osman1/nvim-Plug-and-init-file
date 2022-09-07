@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>~/.config/nvim/init.vim.html</title>
+<meta name="Generator" content="Vim/8.0">
+<meta name="plugin-version" content="vim8.1_v2">
+<meta name="syntax" content="vim">
+<meta name="settings" content="number_lines,use_css,pre_wrap,no_foldcolumn,expand_tabs,line_ids,prevent_copy=,use_input_for_pc=fallback">
+<meta name="colorscheme" content="sonokai">
+<style>
+<!--
+pre { white-space: pre-wrap; font-family: monospace; color: #bcbcbc; background-color: #262626; }
+body { font-family: monospace; color: #bcbcbc; background-color: #262626; }
+* { font-size: 1em; }
+.String { color: #d7af5f; }
+.Delimiter { color: #bcbcbc; }
+.LineNr { color: #585858; }
+.Statement { color: #ff5f5f; }
+.Comment { color: #949494; font-style: italic; }
+.Green { color: #87af5f; }
+.BlueItalic { color: #87afd7; }
+-->
+</style>
+
+<script>
+<!--
+
+/* function to open any folds containing a jumped-to line before jumping to it */
+function JumpToLine()
+{
+  var lineNum;
+  lineNum = window.location.hash;
+  lineNum = lineNum.substr(1); /* strip off '#' */
+
+  if (lineNum.indexOf('L') == -1) {
+    lineNum = 'L'+lineNum;
+  }
+  var lineElem = document.getElementById(lineNum);
+  /* Always jump to new location even if the line was hidden inside a fold, or
+   * we corrected the raw number to a line ID.
+   */
+  if (lineElem) {
+    lineElem.scrollIntoView(true);
+  }
+  return true;
+}
+if ('onhashchange' in window) {
+  window.onhashchange = JumpToLine;
+}
+
+-->
+</script>
+</head>
+<body onload='JumpToLine();'>
+<pre id='vimCodeElement'>
+<span id="L1" class="LineNr"> 1 </span>:<span class="Statement">set</span><span class="BlueItalic"> </span><span class="BlueItalic">number</span>
+<span id="L2" class="LineNr"> 2 </span>:<span class="Statement">set</span><span class="BlueItalic"> </span><span class="BlueItalic">relativenumber</span>
+<span id="L3" class="LineNr"> 3 </span>:<span class="Statement">set</span><span class="BlueItalic"> </span><span class="BlueItalic">autoindent</span>
+<span id="L4" class="LineNr"> 4 </span>:<span class="Statement">set</span><span class="BlueItalic"> </span><span class="BlueItalic">tabstop</span><span class="BlueItalic">=4</span>
+<span id="L5" class="LineNr"> 5 </span>:<span class="Statement">set</span><span class="BlueItalic"> </span><span class="BlueItalic">shiftwidth</span><span class="BlueItalic">=4</span>
+<span id="L6" class="LineNr"> 6 </span>:<span class="Statement">set</span><span class="BlueItalic"> </span><span class="BlueItalic">smarttab</span>
+<span id="L7" class="LineNr"> 7 </span>:<span class="Statement">set</span><span class="BlueItalic"> </span><span class="BlueItalic">softtabstop</span><span class="BlueItalic">=4</span>
+<span id="L8" class="LineNr"> 8 </span>:<span class="Statement">set</span><span class="BlueItalic"> </span><span class="BlueItalic">mouse</span><span class="BlueItalic">=a</span>
+<span id="L9" class="LineNr"> 9 </span>
+<span id="L10" class="LineNr">10 </span><span class="Statement">call</span> plug#<span class="Green">begin</span><span class="Delimiter">(</span><span class="String">'~/.local/share/nvim/plugged'</span><span class="Delimiter">)</span>
+<span id="L11" class="LineNr">11 </span>Plug <span class="String">'<a href="https://github.com/preservim/nerdtree">https://github.com/preservim/nerdtree</a>'</span> <span class="Comment">&quot; NerdTree</span>
+<span id="L12" class="LineNr">12 </span>Plug <span class="String">'Xuyuanp/nerdtree-git-plugin'</span> <span class="Comment">&quot; NerdTree Git tracker</span>
+<span id="L13" class="LineNr">13 </span>Plug <span class="String">'<a href="https://github.com/tpope/vim-commentary">https://github.com/tpope/vim-commentary</a>'</span> <span class="Comment">&quot; For Commenting gcc &amp; gc</span>
+<span id="L14" class="LineNr">14 </span><span class="Comment">&quot; Plug '<a href="https://github.com/vim-airline/vim-airline">https://github.com/vim-airline/vim-airline</a>' &quot; Status bar</span>
+<span id="L15" class="LineNr">15 </span>Plug <span class="String">'<a href="https://github.com/ap/vim-css-color">https://github.com/ap/vim-css-color</a>'</span> <span class="Comment">&quot; CSS Color Preview</span>
+<span id="L16" class="LineNr">16 </span>Plug <span class="String">'<a href="https://github.com/rafi/awesome-vim-colorschemes">https://github.com/rafi/awesome-vim-colorschemes</a>'</span> <span class="Comment">&quot; Retro Scheme</span>
+</pre>
+</body>
+</html>
+<!-- vim: set foldmethod=manual : -->
