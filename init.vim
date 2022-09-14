@@ -45,6 +45,9 @@ inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
 
 :colorscheme sonokai " colorscheme
 
+" add prettier 
+command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
+
 lua << EOF
 require "user.lualine"
 EOF
