@@ -6,6 +6,7 @@
 :set smarttab
 :set softtabstop=4
 :set mouse=a
+:set spelllang=en
 
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'https://github.com/preservim/nerdtree' " NerdTree
