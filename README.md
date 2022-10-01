@@ -48,7 +48,7 @@ auto complete HTML tag:
 
 for other COC package see : https://github.com/orgs/neoclide/repositories
 
-This work is form NeuralNine channal: 
+This work is beased on NeuralNine channal: 
 
 
 
