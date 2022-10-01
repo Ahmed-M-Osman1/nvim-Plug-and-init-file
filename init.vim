@@ -7,6 +7,7 @@
 :set softtabstop=4
 :set mouse=a
 :set spelllang=en
+:set termbidi
 
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'https://github.com/preservim/nerdtree' " NerdTree
