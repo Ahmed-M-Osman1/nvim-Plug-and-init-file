@@ -53,6 +53,7 @@ for other COC package see : https://github.com/orgs/neoclide/repositories
 
 This work is beased on NeuralNine channal: 
 
-
+Please use starship to have best preformance And great looking.
+📦 https://starship.rs/
 
 [![IMAGE ALT TEXT HERE](https://github.com/akiid777/nvim-Plug-and-init-file/blob/master/298671366_5645693332108360_7670396056686747120_n.jpg)](https://www.youtube.com/watch?v=JWReY93Vl6g&t=1270s)
