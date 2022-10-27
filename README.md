@@ -1,6 +1,9 @@
 # nvim Plug Form Ahmed M Osman.
 this is my neovim Plugs and init file.
 
+# Releases:
+can be found here: https://github.com/neovim/neovim/releases/
+
 # How to use my setup? 
 
 first, clone this repo to .config/nvim
