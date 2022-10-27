@@ -1,4 +1,4 @@
-:set number
+set number
 :set relativenumber
 :set autoindent
 :set tabstop=4
@@ -25,8 +25,9 @@ Plug 'https://github.com/Pocco81/AutoSave.nvim' " autosave
 " lualine
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
-" Plug 'SergioRibera/vim-screenshot', { 'do': 'npm install --prefix Renderizer' }
-Plug 'jmckiern/vim-shoot', { 'do': '\"./install.py\" chromedriver' }
+Plug 'SergioRibera/vim-screenshot', { 'do': 'npm install --prefix Renderizer' }
+Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+" Plug 'jmckiern/vim-shoot', { 'do': '\"./install.py\" chromedriver' }
 set encoding=UTF-8
 call plug#end()
 
@@ -45,7 +46,8 @@ nmap <F8> :TagbarToggle<CR>
 inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
 :set completeopt-=preview " For No Previews
 
-:colorscheme sonokai " colorscheme
+":colorscheme sonokai " colorscheme
+:colorscheme tokyonight
 
 " add prettier 
 command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
