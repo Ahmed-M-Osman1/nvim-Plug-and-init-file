@@ -27,6 +27,9 @@ Plug 'nvim-lualine/lualine.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'SergioRibera/vim-screenshot', { 'do': 'npm install --prefix Renderizer' }
 Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
+Plug 'nvim-lua/plenary.nvim'
 " Plug 'jmckiern/vim-shoot', { 'do': '\"./install.py\" chromedriver' }
 set encoding=UTF-8
 call plug#end()
@@ -54,4 +57,5 @@ command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
 
 lua << EOF
 require "user.lualine"
+require "user.trans"
 EOF
