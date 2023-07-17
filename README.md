@@ -1,6 +1,11 @@
 # nvim Plug Form Ahmed M Osman.
 this is my neovim Plugs and init file.
 
+![image](https://github.com/akiid777/nvim-Plug-and-init-file/assets/64021350/f4be2b7b-9906-418c-aa47-5f42c3824b51)
+
+![image](https://github.com/akiid777/nvim-Plug-and-init-file/assets/64021350/553bee25-cad3-4774-89e2-8e076492522e)
+
+
 # Releases:
 can be found here: https://github.com/neovim/neovim/releases/
 
